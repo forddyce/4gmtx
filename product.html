@@ -1,0 +1,502 @@
+<div class="row">
+	<div class="col-md-3">
+		<div class="search-box box">
+			<div class="box-header"><span class="glyphicon glyphicon-search"></span> Cari</div>
+			<form onsubmit="return false;">
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Keyword" name="keyword" />
+				</div>
+
+				<div class="form-group">
+					<select class="form-control dropdown">
+						<option value="">Select Province</option>
+						<option value="1">Aceh</option>
+						<option value="2">Sumatera Utara</option>
+						<option value="3">Bengkulu</option>
+						<option value="4">Jambi</option>
+						<option value="5">Riau</option>
+						<option value="6">Sumatera Barat</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<select class="form-control dropdown">
+						<option value="">Select City</option>
+						<option value="1397">JAMBI</option>
+						<option value="1398">DANAU TELUK,JAMBI</option>
+						<option value="1399">JAMBI SELATAN,JAMBI</option>
+						<option value="1400">JAMBI TIMUR,JAMBI</option>
+						<option value="1401">JELUTUNG,JAMBI</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<select class="form-control dropdown">
+						<option value="">Select Category</option>
+						<option value="113">Bisnis &amp; Layanan Jasa</option>
+						<option value="114">Fotographer</option>
+						<option value="131">Real Estate &amp; Kontraktor</option>
+						<option value="124">Komputer &amp; Elektronik</option>
+					</select>
+				</div>
+
+				<button class="button-search btn btn-block btn-primary" type="submit">
+					<span>FIND</span>
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="col-md-9">
+		<div class="category-box box">
+			<p class="box-header"><span class="glyphicon glyphicon-th-large"></span> Pilih Kategori</p>
+			<hr />
+
+			<div class="row">
+				<div class="col-md-4">
+					<ul>
+						<li><a data-color="#E605CE" data-toggle="tab" href="#allcats"><i class="fa fa-th fa-fw" style="color: #333;"></i>  Semua </a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<ul>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<ul>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+						<li><a data-color="#0589E6" data-toggle="tab" href="#cat-3"><i class="fa fa-laptop fa-fw"></i> Komputer &amp; Elektronik</a></li>
+						<li><a data-color="#ff0000" data-toggle="tab" href="#cat-2"><i class="fa fa-briefcase fa-fw" style="color: #333;"></i> Bisnis &amp; Layanan Jasa</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<br />
+		<h2><span class="sc-header">JUST GOT IN</span></h2>
+		<br />
+
+		<div class="owl-carousel owl-theme latest-posts-classic">
+			<div id="newest-slide" class="carousel slide">
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-row-item item">
+					<div class="portfolio-border">
+						<div class="portfolio-thumb">
+							<a class="lightbox" data-lightbox-type="ajax" href="images/thumb.jpg"><img alt="88 STUDIO" src="images/thumb.jpg" /></a>
+						</div>
+						<div class="portfolio-details">
+							<h4><a href="#">88 STUDIO</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="tab-content" id="categoryTabPane">
+			<div id="allcats" class="tab-pane active cats-panel">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">All Products</h3>
+					</div>
+
+					<div class="panel-body">
+						<div class="latest-posts-classic" data-appeared-items="2">
+							<div class="post-row item col-md-6 col-sm-12">
+								<div class="listads">
+									<div class="left-meta-post">
+										<div class="post-date">
+											<div class="post-type">
+												<span class="day">31</span><span class="month">Aug</span>
+											</div>
+										</div>
+
+										<div class="post-date">
+											<div class="post-type">
+												<i class="glyphicon glyphicon-eye-open"></i>
+												<span> 2 </span>
+											</div>
+										</div>
+									</div>
+
+									<div class="right-meta-post">
+										<div class="post-image">
+											<a href="#">
+												<img src="http://placehold.it/300x300/0097A7/FFFFFF/?text=Product+Image" alt="Enable Internet to View Image" />
+											</a>
+										</div>
+										<div class="post-content">
+											<h3 class="post-title">
+												<a href="#" style="float:left">88 STUDIO</a>
+											</h3>
+											<p><i class="fa fa-th-large fa-fw"></i> Fotographer</p>
+											<p><i class="fa fa-road fa-fw"></i> Jl. Kontak no.8</p>
+											<p><i class="fa fa-map-marker fa-fw"></i> MEDAN</p>
+											<p><i class="fa fa-phone fa-fw"></i> 01827374467</p>
+											<p style="display:none">
+												Mari join ke 4GMTX
+											</p>
+										</div>
+										<a class="read-more pull-right" href="#">
+											See Detail >>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="post-row item col-md-6 col-sm-12">
+								<div class="listads">
+									<div class="left-meta-post">
+										<div class="post-date">
+											<div class="post-type">
+												<span class="day">31</span><span class="month">Aug</span>
+											</div>
+										</div>
+
+										<div class="post-date">
+											<div class="post-type">
+												<i class="glyphicon glyphicon-eye-open"></i>
+												<span> 2 </span>
+											</div>
+										</div>
+									</div>
+
+									<div class="right-meta-post">
+										<div class="post-image">
+											<a href="#">
+												<img src="http://placehold.it/300x300/0097A7/FFFFFF/?text=Product+Image" alt="Enable Internet to View Image" />
+											</a>
+										</div>
+										<div class="post-content">
+											<h3 class="post-title">
+												<a href="#" style="float:left">88 STUDIO</a>
+											</h3>
+											<p><i class="fa fa-th-large fa-fw"></i> Fotographer</p>
+											<p><i class="fa fa-road fa-fw"></i> Jl. Kontak no.8</p>
+											<p><i class="fa fa-map-marker fa-fw"></i> MEDAN</p>
+											<p><i class="fa fa-phone fa-fw"></i> 01827374467</p>
+											<p style="display:none">
+												Mari join ke 4GMTX
+											</p>
+										</div>
+										<a class="read-more pull-right" href="#">
+											See Detail >>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="cat-2" class="tab-pane cats-panel">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Bisnis &amp; Layanan Jasa</h3>
+					</div>
+
+					<div class="panel-body">
+						<div class="latest-posts-classic" data-appeared-items="2">
+							<div class="post-row item col-md-6 col-sm-12">
+								<div class="listads">
+									<div class="left-meta-post">
+										<div class="post-date">
+											<div class="post-type">
+												<span class="day">31</span><span class="month">Aug</span>
+											</div>
+										</div>
+
+										<div class="post-date">
+											<div class="post-type">
+												<i class="glyphicon glyphicon-eye-open"></i>
+												<span> 2 </span>
+											</div>
+										</div>
+									</div>
+
+									<div class="right-meta-post">
+										<div class="post-image">
+											<a href="#">
+												<img src="http://placehold.it/300x300/0097A7/FFFFFF/?text=Product+Image" alt="Enable Internet to View Image" />
+											</a>
+										</div>
+										<div class="post-content">
+											<h3 class="post-title">
+												<a href="#" style="float:left">88 STUDIO</a>
+											</h3>
+											<p><i class="fa fa-th-large fa-fw"></i> Fotographer</p>
+											<p><i class="fa fa-road fa-fw"></i> Jl. Kontak no.8</p>
+											<p><i class="fa fa-map-marker fa-fw"></i> MEDAN</p>
+											<p><i class="fa fa-phone fa-fw"></i> 01827374467</p>
+											<p style="display:none">
+												Mari join ke 4GMTX
+											</p>
+										</div>
+										<a class="read-more pull-right" href="#">
+											See Detail >>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="post-row item col-md-6 col-sm-12">
+								<div class="listads">
+									<div class="left-meta-post">
+										<div class="post-date">
+											<div class="post-type">
+												<span class="day">31</span><span class="month">Aug</span>
+											</div>
+										</div>
+
+										<div class="post-date">
+											<div class="post-type">
+												<i class="glyphicon glyphicon-eye-open"></i>
+												<span> 2 </span>
+											</div>
+										</div>
+									</div>
+
+									<div class="right-meta-post">
+										<div class="post-image">
+											<a href="#">
+												<img src="http://placehold.it/300x300/0097A7/FFFFFF/?text=Product+Image" alt="Enable Internet to View Image" />
+											</a>
+										</div>
+										<div class="post-content">
+											<h3 class="post-title">
+												<a href="#" style="float:left">88 STUDIO</a>
+											</h3>
+											<p><i class="fa fa-th-large fa-fw"></i> Fotographer</p>
+											<p><i class="fa fa-road fa-fw"></i> Jl. Kontak no.8</p>
+											<p><i class="fa fa-map-marker fa-fw"></i> MEDAN</p>
+											<p><i class="fa fa-phone fa-fw"></i> 01827374467</p>
+											<p style="display:none">
+												Mari join ke 4GMTX
+											</p>
+										</div>
+										<a class="read-more pull-right" href="#">
+											See Detail >>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="cat-3" class="tab-pane cats-panel">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Komputer &amp; Elektronik</h3>
+					</div>
+
+					<div class="panel-body">
+						<div class="latest-posts-classic" data-appeared-items="2">
+							<div class="post-row item col-md-6 col-sm-12">
+								<div class="listads">
+									<div class="left-meta-post">
+										<div class="post-date">
+											<div class="post-type">
+												<span class="day">31</span><span class="month">Aug</span>
+											</div>
+										</div>
+
+										<div class="post-date">
+											<div class="post-type">
+												<i class="glyphicon glyphicon-eye-open"></i>
+												<span> 2 </span>
+											</div>
+										</div>
+									</div>
+
+									<div class="right-meta-post">
+										<div class="post-image">
+											<a href="#">
+												<img src="http://placehold.it/300x300/0097A7/FFFFFF/?text=Product+Image" alt="Enable Internet to View Image" />
+											</a>
+										</div>
+										<div class="post-content">
+											<h3 class="post-title">
+												<a href="#" style="float:left">88 STUDIO</a>
+											</h3>
+											<p><i class="fa fa-th-large fa-fw"></i> Fotographer</p>
+											<p><i class="fa fa-road fa-fw"></i> Jl. Kontak no.8</p>
+											<p><i class="fa fa-map-marker fa-fw"></i> MEDAN</p>
+											<p><i class="fa fa-phone fa-fw"></i> 01827374467</p>
+											<p style="display:none">
+												Mari join ke 4GMTX
+											</p>
+										</div>
+										<a class="read-more pull-right" href="#">
+											See Detail >>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="post-row item col-md-6 col-sm-12">
+								<div class="listads">
+									<div class="left-meta-post">
+										<div class="post-date">
+											<div class="post-type">
+												<span class="day">31</span><span class="month">Aug</span>
+											</div>
+										</div>
+
+										<div class="post-date">
+											<div class="post-type">
+												<i class="glyphicon glyphicon-eye-open"></i>
+												<span> 2 </span>
+											</div>
+										</div>
+									</div>
+
+									<div class="right-meta-post">
+										<div class="post-image">
+											<a href="#">
+												<img src="http://placehold.it/300x300/0097A7/FFFFFF/?text=Product+Image" alt="Enable Internet to View Image" />
+											</a>
+										</div>
+										<div class="post-content">
+											<h3 class="post-title">
+												<a href="#" style="float:left">88 STUDIO</a>
+											</h3>
+											<p><i class="fa fa-th-large fa-fw"></i> Fotographer</p>
+											<p><i class="fa fa-road fa-fw"></i> Jl. Kontak no.8</p>
+											<p><i class="fa fa-map-marker fa-fw"></i> MEDAN</p>
+											<p><i class="fa fa-phone fa-fw"></i> 01827374467</p>
+											<p style="display:none">
+												Mari join ke 4GMTX
+											</p>
+										</div>
+										<a class="read-more pull-right" href="#">
+											See Detail >>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

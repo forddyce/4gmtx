@@ -1,0 +1,584 @@
+/*
+ *	Custom CSS for mPS
+ *	1.0: Normalize
+ *	1.1: Typebase
+ *	2.0: Header
+ *	3.0: Slider
+ *	4.0: Box + Panel
+ *	5.0: About + Stockist + Support
+ */
+
+// 1.0: Normalize
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	word-wrap: break-word;
+}
+
+p {
+	white-space: normal;
+}
+
+.mld_mainContent {
+	margin-top: 0;
+}
+
+.btn {
+	border: none;
+}
+
+.btn-primary {
+	background: #06A8FF;
+}
+
+.sc-header {
+	color: #111;
+	line-height: 1.5em;
+	font-size: 20px;
+	position: relative;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.sc-header:after {
+	content:' ';
+	position: absolute;
+	top:100%;
+	left:20px;
+	width: 30%;
+	border:2px solid #0589E6;
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+	transform:translateX(-50%);
+}
+
+/* For glory of Satan, 
+ * Since you changed the color of original BOOTSTRAP input
+ * BUT ONLY FOR [type=email]
+ * OH GOD WHY
+ */
+.form-control {
+	border: 1px solid #ccc !important;
+	border-radius: 0 !important;
+}
+
+@media only screen 
+and (max-device-width: 480px) {
+	.mld_mainContent {
+		padding-top: 65px;
+	}
+
+	.panel-body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// 1.1 Typebase
+
+html {
+	font-family: serif;
+	font-size: 137.5%;
+	-webkit-font-smoothing: antialiased;
+}
+p {
+	line-height: 3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+ul,
+ol {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+ul li,
+ol li {
+	line-height: 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+blockquote {
+	line-height: 1.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	line-height: 1.5rem;
+}
+h1 {
+	font-size: 4.242rem;
+	line-height: 4.5rem;
+	margin-top: 3rem;
+}
+h2 {
+	font-size: 2.828rem;
+	line-height: 3rem;
+	margin-top: 3rem;
+}
+h3 {
+	font-size: 1.414rem;
+}
+h4 {
+	font-size: 0.707rem;
+}
+h5 {
+	font-size: 0.4713333333333333rem;
+}
+h6 {
+	font-size: 0.3535rem;
+}
+table {
+	margin-top: 1.5rem;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+table td,
+table th {
+	padding: 0;
+	line-height: 33px;
+}
+
+code {
+	vertical-align: bottom;
+}
+
+.lead {
+	font-size: 1.414rem;
+}
+
+.hug {
+	margin-top: 0;
+}
+
+
+// 2.0: Header
+
+.sticky {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .75);
+}
+
+.navbar-toggle {
+	float: right;
+}
+
+.navbar-toggle i {
+	font-size: 25px;
+	color: #fff;
+}
+
+.navbar-brand {
+	padding: 27px 0;
+}
+
+.navbar-brand img {
+	margin-left: 3.25em;
+}
+
+.navbar-nav {
+	margin: auto;
+}
+
+.menu > li > a {
+	height: inherit;
+	line-height: 50px;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+}
+
+@media only screen 
+and (max-device-width: 480px) {
+	.menu > li > a {
+		height: 40px;
+		line-height: 40px;
+	}
+
+	.navbar-collapse {
+		padding: 0;
+	}
+
+	.navbar-brand img {
+		margin-top: .7em;
+		margin-left: 1.25em;
+	}
+
+	.menu > li {
+		border-bottom: thin solid;
+	}
+}
+
+@media only screen 
+and (min-device-width: 481px) 
+and (max-device-width: 1000px) {
+	.navbar-collapse {
+		padding: 0;
+	}
+
+	.navbar-brand {
+		width: 100%;
+	}
+
+	.navbar-brand img {
+		margin: .25em auto;
+	}
+}
+
+// 3.0: Slider
+
+#main-slide .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.owl-item {
+	padding: 0;
+}
+
+.owl-stage {
+	position: relative;
+}
+
+.owl-dots {
+	bottom: 1em;
+	left: 0;
+	margin: 0 auto !important;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 20px;
+	height: 20px;
+	margin: 5px 10px;
+}
+
+#newest-slide .portfolio-border {
+	padding: 10px 25px;
+}
+
+#newest-slide img {
+	border-bottom: 3px solid #f10d0d;
+	padding-bottom: 10px;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+	background: #0095ff;
+	border-radius: 0;
+	padding: 10px 15px;
+	font-size: 18px;
+}
+
+@media only screen 
+and (max-device-width: 480px) {
+	.owl-theme .owl-dots .owl-dot span {
+		width: 10px;
+		height: 10px;
+		margin: 5px 7px;
+	}
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #00bcd4;
+}
+
+// 4.0: Box + Panel
+
+.search-box {
+	border: thin solid #F4F0F0;
+}
+
+.search-box button[type=submit] {
+	background-color: #FF1F10;
+}
+
+.search-box button[type=submit]:hover {
+	background-color: #FF5144;
+}
+
+.search-box .box-header {
+	background: #ff9800 none repeat scroll 0 0;
+	color: #fff;
+	padding: 10px;;
+}
+
+.search-box form  {
+	padding: 25px 10px;
+}
+
+.box-header {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+@media only screen 
+and (max-device-width: 480px) {
+	.category-box {
+		margin-top: 15px;
+	}
+}
+
+.category-box ul {
+	list-style: none;
+}
+
+.category-box ul li {
+	line-height: 22px;
+}
+
+.category-box ul li a {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: #fff none repeat scroll 0 0;
+	border-color: #f7f7f7 #f7f7f7 #f7f7f7 #ecebeb;
+	border-image: none;
+	border-style: solid;
+	border-width: 1px 1px 1px 3px;
+	display: block;
+	font-size: 14px;
+	padding: 10px;
+	font-size: 13px;
+	color: #333;
+}
+
+.category-box ul li a:hover {
+	background: #f7f7f7 none repeat scroll 0 0;
+	border-color: #f7f7f7 #f7f7f7 #e8e7e7 red;
+}
+
+@media only screen 
+and (max-device-width: 480px) {
+	.category-box{
+		padding-top: 25px;
+		padding-bottom: 20px;
+	}
+}
+
+.cats-panel p {
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.cats-panel .left-meta-post {
+	margin-right: 0;
+}
+
+.cats-panel .right-meta-post {
+	padding: 7px 10px 0;
+	width: 80%;
+}
+
+.cats-panel .post-title {
+	margin: 8px 0;
+}
+
+.cats-panel .fa {
+	color: #00bcd4;
+}
+
+.cats-panel .read-more {
+	bottom: 5px;
+	right: 10px;
+}
+
+.cats-panel .post-image {
+	float: left;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+}
+
+.cats-panel .post-image img {
+	position: absolute;
+	top: -9999px;
+	bottom: -9999px;
+	left: -9999px;
+	right: -9999px;
+	margin: auto;
+}
+
+.cats-panel .post-content {
+	float: left;
+	margin-left: 10px;
+}
+
+@media only screen 
+and (max-device-width: 480px) {
+	.cats-panel .left-meta-post {
+		display: table;
+		float: none;
+		width: 100%;
+	}
+
+	.cats-panel .left-meta-post .post-date {
+		width: auto;
+		display: table-cell;
+		border-right: thin solid #fff;
+		border-bottom: thin solid #fff;
+	}
+
+	.cats-panel .left-meta-post .post-date:last-child {
+		border-right: none;
+	}
+
+	.cats-panel .left-meta-post .post-date .day {
+		font-size: 18px;
+	}
+
+	.cats-panel .right-meta-post {
+		display: table;
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.cats-panel .post-image {
+		width: 100%;
+	}
+}
+
+#categoryTabPane {
+	padding: 0;
+	border: none;
+}
+
+// 5.0: About + Stockist + Support
+
+.heading {
+	position: relative;
+	margin: 5% 0;
+}
+
+.heading:after {
+	content:' ';
+	margin-top: 10px;
+	position: absolute;
+	top:100%;
+	left: 50%;
+	width: 10%;
+	border: 2px solid #111;
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+	transform:translateX(-50%);
+}
+
+.white-heading {
+	color: #fff;
+}
+
+.white-heading:after {
+	border: 2px solid #fff;
+}
+
+#stockist {
+	background: rgba(0, 0, 0, 0) url("../images/mt-0446_bg1.jpg") no-repeat scroll 0 0 / cover;
+}
+
+/* i put this for the sake of the original code
+ * actually this is messy
+ */
+#stockist img {
+	width: 100%;
+}
+
+#stockist .stockist-title {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* HAD TO PUT !important BECAUSE OF .boxvid a */
+
+.btn-white {
+	background: transparent !important;
+	text-transform: uppercase;
+	font-weight: lighter;
+	border: 2px solid #fff;
+	padding: 5px 15px !important;
+	font-size: 13px;
+	color: #fff;
+}
+
+.btn-white:hover {
+	background: rgba(255, 255, 255, .5) !important;
+	color: #ddd;
+}
+
+.btn-white:active {
+	background: rgba(255, 255, 255, .5) !important;
+	color: #ddd;
+}
+
+.btn-white:focus {
+	background: rgba(255, 255, 255, .5) !important;
+	color: #ddd;
+}
+
+#support {
+	padding-bottom: 50px;
+}
+
+#support p {
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#support .border {
+	width:100%;
+	height: 10px;
+	background: #00bcd4;
+	background: -moz-linear-gradient(left, #ff0000 0%, #ff3030 49%, #3094ff 49%, #0072ff 100%);
+	background: -webkit-linear-gradient(left, #ff0000 0%,#ff3030 49%,#3094ff 49%,#0072ff 100%);
+	background: linear-gradient(to right, #ff0000 0%,#ff3030 49%,#3094ff 49%,#0072ff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#0072ff',GradientType=1 );
+}
+
+
+#support .fa {
+	font-weight: bold;
+	color: #FF2929;
+}
+
+#support li {
+	border-bottom: thin dotted #d5d5d5;
+	padding: 10px 8px;
+}
+
+#support li a {
+	color: #111;
+	text-decoration: underline;
+}
+
+#support li:last-child {
+	border-bottom: none;
+}
