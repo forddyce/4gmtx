@@ -5,7 +5,7 @@
 
 This is the **most messy change** attempt for a redesign template I have ever taken.
 Messy HTML code structure, no schema, empty css style, and deprecated tags.
-`<script>`` tags everywhere, without proper placement.
+`<script>`  tags everywhere, without proper placement.
 
 `@import` from CSS is deprecated. Use CDN instead (much better load time) !
 Original developers of the site, you better get your shit straight.
