@@ -13,6 +13,8 @@ Original developers of the site, you better get your shit straight.
 AND NO OPTIMIZED IMAGE, a single logo costs around 300KB, while it can be around 40-80KB,
 and possibly below 30KB. I have maximized it but still about 100KB with no quality loss.
 
+Just open **index.html** and **replika.html** file.
+
 Changelog:
 
 - Mobile version header, fix padding top;

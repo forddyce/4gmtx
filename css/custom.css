@@ -5,7 +5,8 @@
  *  2.0: Header
  *  3.0: Slider
  *  4.0: Box + Panel
- *  5.0: About + Stockist + Support
+ *  5.0: Stockist + Support
+ *  6.0: Sidebar
  */
 
 // 1.0: Normalize
@@ -103,6 +104,10 @@ and (max-device-width: 480px) {
 	border-radius: 0 !important;
 }
 
+.input-group .form-control {
+	z-index: 0;
+}
+
 @media only screen 
 and (max-device-width: 480px) {
 	.mld_mainContent {
@@ -128,11 +133,7 @@ p {
 	margin-bottom: 0;
 	font-size: 18px;
 }
-ul,
-ol {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-}
+
 ul li,
 ol li {
 	line-height: 1.5rem;
@@ -480,7 +481,7 @@ and (max-device-width: 480px) {
 	text-transform: uppercase;
 }
 
-// 5.0: About + Stockist + Support
+// 5.0: Stockist + Support
 
 .heading {
 	position: relative;
@@ -590,4 +591,95 @@ and (max-device-width: 480px) {
 
 #support li:last-child {
 	border-bottom: none;
+}
+
+// 6.0: Sidebar
+
+.sidebar {}
+
+.sidebar h2 {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: thin solid #aaa;
+	font-size: 20px;
+}
+
+.sidebar-image {
+	position: relative;
+	overflow: hidden;
+	height: 150px;
+	width:100%;
+}
+
+.sidebar-image img {
+	position: absolute;
+	top: -9999px;
+	bottom: -9999px;
+	left: -9999px;
+	right: -9999px;
+	margin: auto;
+}
+
+.sidebar-widget ul li {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.sidebar-widget ul li:first-child {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.sidebar-widget ul li:last-child {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.sidebar-widget ul li:before, .sidebar-widget ul li:after {
+	clear: both;
+	display: block;
+	content: ' ';
+}
+
+.sidebar-widget ul li p {
+	font-size: 14px;
+}
+
+.sidebar-widget ul li .fa {
+	margin-right: 8px;
+	color: #F44336;
+	font-size: 18px;
+}
+
+.sidebar-widget ul li .pull-left {
+	font-weight: bold;
+	font-size:12px;
+}
+
+.sidebar-widget .input-group-addon {
+	border: none;
+	background-color: #F44336;
+	color: #fff;
+}
+
+.sidebar-widget form [type=submit] {
+	border-radius: none;
+}
+
+.replika-container .nav-tabs > li {
+	width: 25%;
+}
+
+.replika-container .nav-tabs > li > a {
+	margin-right: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: none;
+}
+
+.replika-container .tab-content {
+	border: none;
+	padding: 0 12px 16px 0;
 }
