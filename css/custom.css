@@ -56,6 +56,10 @@ p {
 	transform:translateX(-50%);
 }
 
+.no-padding {
+	padding:0;
+}
+
 .fancy {
 	line-height: 0.5;
 	text-align: center;
@@ -354,36 +358,11 @@ and (max-device-width: 480px) {
 	background: #00bcd4;
 }
 
-// 4.0: Box + Panel
-
-.search-box {
-	border: thin solid #F4F0F0;
-}
+/* 4.0: Box + Panel */
 
 .search-box button[type=submit] {
-	background-color: #FF1F10;
-}
-
-.search-box button[type=submit]:hover {
-	background-color: #FF5144;
-}
-
-.search-box .box-header {
-	background: #ff9800 none repeat scroll 0 0;
-	color: #fff;
-	padding: 10px;;
-}
-
-.search-box form  {
-	padding: 25px 10px;
-}
-
-.box-header {
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: lighter;
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	border-radius: 0;
+	height: 35px;
 }
 
 .section-main {
