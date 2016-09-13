@@ -315,10 +315,30 @@ and (max-device-width: 1000px) {
 }
 
 .owl-theme .owl-nav [class*="owl-"] {
-	background: #0095ff;
-	border-radius: 0;
-	padding: 10px 15px;
-	font-size: 18px;
+	background: transparent none repeat scroll 0 0;
+	color: #333;
+	font-size: 50px;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: transparent none repeat scroll 0 0;
+	color: #008cee;
+}
+
+.owl-nav {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+}
+
+.owl-prev {
+	position: absolute;
+	left: -55px;
+}
+
+.owl-next {
+	position: absolute;
+	right: -55px;
 }
 
 @media only screen 
@@ -366,6 +386,20 @@ and (max-device-width: 480px) {
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.section-main {
+	padding: 50px;
+}
+
+@media only screen 
+and (max-device-width: 980px) {
+	.section-main {
+		padding: 20px 5px;
+	}
+}
+
+.section-main.section-grey {
+	background-color: #f7f7f7;
+}
 
 @media only screen 
 and (max-device-width: 480px) {
@@ -376,6 +410,16 @@ and (max-device-width: 480px) {
 
 .category-box .box-header {
 	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.category-box .small-link {
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.category-box .owl-item {
+	padding: 0;
 }
 
 .category-box div {
